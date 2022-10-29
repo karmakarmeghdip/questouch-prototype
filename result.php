@@ -26,7 +26,7 @@
                     foreach ($data as $i) {
                         echo htmlspecialchars($i)." ";
                     }
-                    echo "<br>";
+                    echo " <button>Download</button><br>";
                 }
               }
 
