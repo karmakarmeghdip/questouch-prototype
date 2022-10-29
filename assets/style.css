@@ -177,13 +177,10 @@
 	opacity: 80%;
 }
 
-.List {
+.List li{
 	border: 2px solid rgb(64, 64, 65);
 	margin: auto;
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(4px) saturate(180%);
-}
-
-.List li{
 	padding: 26px 30px;
 }
