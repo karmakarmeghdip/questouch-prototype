@@ -132,6 +132,7 @@
 	border-radius: 15px;
 	color: blue;
 	cursor: pointer;
+	box-shadow: 10px;
 }
 
 .SearchBar{
@@ -195,4 +196,23 @@
 	backdrop-filter: blur(4px) saturate(180%);
 	padding: 26px 30px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn1 {
+	padding: 8px 20px;
+	margin: 7px 0;
+	border: 2px solid gray;
+	font-size: 15px;
+	border-radius: 15px;
+}
+
+.btn1:hover{
+	padding: 8px 20px;
+	margin: 7px 0;
+	border: 2px solid gray;
+	font-size: 15px;
+	border-radius: 15px;
+	color: yellow;
+	cursor: pointer;
+	box-shadow: 10px;
 }
