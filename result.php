@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Result</title>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
     </head>
     <body>
         <div class="List">
@@ -28,7 +29,7 @@
                     foreach ($data as $i) {
                         echo htmlspecialchars($i)." ";
                     }
-                    echo " <button>Download</button></li>";
+                    echo " <button class="DownloadBtn">Download</button></li>";
                 }
               }
 
