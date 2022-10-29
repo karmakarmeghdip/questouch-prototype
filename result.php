@@ -12,7 +12,13 @@
               while (($data = fgetcsv($file)) !== false) {
                 $conforms=TRUE;
                 foreach ($tags as $tag) {
-                    if (!in_array($tag, $data, TRUE)) {
+                    $isincluded=FALSE;
+                    foreach ($data as $i) {
+                        if (strtolower($tag)===strtolower($i)) {
+                            $isincluded=TRUE;
+                        }
+                    }
+                    if(!$isincluded) {
                         $conforms=FALSE;
                     }
                 }
