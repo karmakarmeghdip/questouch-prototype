@@ -29,7 +29,7 @@
                     foreach ($data as $i) {
                         echo htmlspecialchars($i)." ";
                     }
-                    echo " <button class='DownloadBtn'>Download</button></li>";
+                    echo " <button class='btn'>Download</button></li>";
                 }
               }
 

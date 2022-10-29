@@ -176,18 +176,13 @@
 	opacity: 80%;
 }
 
-.DownloadBtn button{
-	padding: 5px;
-	font-size: 17px;
-	border: 2px solid gray;
-	border-radius: 9px;
-	color: #cac7ff;
-}
-
 .List {
-	border: 2px solid blue;
+	border: 2px solid rgb(64, 64, 65);
 	margin: auto;
-	padding: 26px 30px;
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(4px) saturate(180%);
+}
+
+.List li{
+	padding: 26px 30px;
 }
