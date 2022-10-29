@@ -3,7 +3,7 @@
         <title>Result</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
     </head>
-    <body>
+    <body class="background">
         <div class="List">
             <ul>
             <?php
