@@ -7,6 +7,7 @@
         <div class="List">
             <ul>
             <?php
+            if($tags) {
               $tags = explode(" ", $_GET["search"]);
 
               $file = fopen("tags.csv", "r");
@@ -34,6 +35,7 @@
               }
 
               fclose($file);
+            }
             ?>
             </ul>
         </div>
