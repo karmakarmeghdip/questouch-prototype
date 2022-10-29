@@ -198,6 +198,16 @@
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.List{
+	display: flex;
+	height: 200vh;
+	flex-direction: column;
+	justify-content: center;
+	width: 35%;
+	height: 50%;
+	align-items: center;
+}
+
 #btn1 {
 	padding: 8px 20px;
 	margin: 7px 0;

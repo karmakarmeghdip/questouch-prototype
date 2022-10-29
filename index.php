@@ -41,9 +41,9 @@
                   <input type="text" placeholder="Enter the tag.." name="search" id="search">
                   <input type="submit" id="btn1" value="Search">
                 </form>
-            </div>
+              </div>
 
-            <button class="btn"><a href="taglist.php"><b>Show available tags</b></a></button>
+              <button class="btn"><a href="taglist.php"><b>Show available tags</b></a></button>
 
             <div class="poster">
               <img src="assets/poster.jpg" alt="poster">
