@@ -11,8 +11,8 @@
               <div class="logo">
                 <img src="assets/logo.jpg">
               </div>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="http://wa.me/919475218087">Contact DTL</a></li>
             </ul>
