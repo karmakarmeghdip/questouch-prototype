@@ -20,7 +20,6 @@
                 <button class="btn btn-sm">Search</button>
             </div> -->
         </nav>
-        <section class="centerer">
         <div class="List">
             <ul>
             <?php
@@ -55,6 +54,5 @@
             ?>
             </ul>
         </div>
-        </section>
     </body>
 </html>
