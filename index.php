@@ -37,8 +37,16 @@
               </div>
 
               <div class="SearchBar">
-                <input type="text" placeholder="Enter the tag.." name="search" id="search">
-                <button class="btn btn-sm">Search</button>
+                <form action="index.php" method="post">
+                  <input type="text" placeholder="Enter the tag.." name="search" id="search">
+                  <input type="submit" class="btn btn-sm">Search</button>
+                </form>
+            </div>
+
+            <div class="List">
+              <?php
+              echo $_POST["search"];
+              ?>
             </div>
 
             <div class="poster">
