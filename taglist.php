@@ -3,7 +3,7 @@
     <title>Tags List</title>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
-<body class="background"><ul class="List">
+<body class="background"><ul class="TagList">
 <?php
 $file = fopen("tags.csv", "r");
 $tags=array("CU", "Physics");

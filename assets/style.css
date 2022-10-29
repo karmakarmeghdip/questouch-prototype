@@ -216,3 +216,13 @@
 	cursor: pointer;
 	box-shadow: 10px;
 }
+
+.TagList li{
+	border: 2px solid rgb(64, 64, 65);
+	margin: auto;
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	backdrop-filter: blur(4px) saturate(180%);
+	padding: 20px 25px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
