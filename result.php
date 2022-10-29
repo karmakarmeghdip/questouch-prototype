@@ -6,15 +6,22 @@
         <div class="List">
             <?php
               $tags = explode(" ", $_GET["search"]);
-              echo $tags;
 
               $file = fopen("tags.csv", "r");
 
               while (($data = fgetcsv($file)) !== false) {
-                foreach ($data as $i) {
-                  echo htmlspecialchars($i)." ";
+                $conforms=TRUE;
+                foreach ($tags as $tag) {
+                    if (!in_array($tag, $data)) {
+                        $conforms=FALSE;
+                    }
                 }
-                echo "<br>";
+                if ($conforms) {
+                    foreach ($data as $i) {
+                        echo htmlspecialchars($i)." ";
+                    }
+                    echo "<br>";
+                }
               }
 
               fclose($file);
