@@ -183,4 +183,5 @@
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(4px) saturate(180%);
 	padding: 26px 30px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
