@@ -37,26 +37,12 @@
               </div>
 
               <div class="SearchBar">
-                <form action="index.php" method="get">
+                <form action="result.php" method="get">
                   <input type="text" placeholder="Enter the tag.." name="search" id="search">
                   <input type="submit" class="btn btn-sm" value="Search">
                 </form>
             </div>
 
-            <div class="List">
-              <?php
-              echo $_GET["search"];
-
-              $file = fopen("tags.csv", "r");
-
-              while (($data = fgetcsv($file)) !== false) {
-                foreach ($data as $i) {
-                  echo htmlspecialchars($i)." ";
-                }
-                echo "<br>";
-              }
-              ?>
-            </div>
 
             <div class="poster">
               <img src="assets/poster.jpg" alt="poster">
