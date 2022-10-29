@@ -11,6 +11,7 @@ The PHP frontpage searches through the csv file for the required tags and return
 
 
 ## Future Plan
-We aim to replace the sloppy csv file implementation with a proper database like PostgreSQL and the question papers will be distributed with a proper CDN like Google Cloud CDN.
-We also aim to create a proper upload page for admins to make it easier for them to upload question papers and assign them with the proper tags.
-We also aim to implement the Question paper metadata system that will store which question was from which chapter and an analytics dashboard that will dynamically calculate the weightage of a chapter within a subset of question papers conforming to the query given ny the user.
+* We aim to replace the sloppy csv file implementation with a proper database like PostgreSQL and the question papers will be distributed with a proper CDN like Google Cloud CDN.
+* We also aim to create a proper upload page for admins to make it easier for them to upload question papers and assign them with the proper tags.
+* We also aim to implement an autocomplete feature that will suggest tags from the tag list while user types in the search bar
+* We also aim to implement the Question paper metadata system that will store which question was from which chapter and an analytics dashboard that will dynamically calculate the weightage of a chapter within a subset of question papers conforming to the query given ny the user.
