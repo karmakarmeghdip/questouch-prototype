@@ -5,5 +5,7 @@ while (($data = fgetcsv($file)) !== false) {
     $tags=array_merge(array_splice($data, 1), $tags);
 }
 
-echo var_dump($tags);
+foreach ($tags as $tag ) {
+    echo $tag."<br>";
+}
 ?>
