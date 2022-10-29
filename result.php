@@ -1,6 +1,12 @@
-<div class="List">
-              <?php
+<html>
+    <head>
+        <title>Result</title>
+    </head>
+    <body>
+        <div class="List">
+            <?php
               $tags = explode(" ", $_GET["search"]);
+              echo $tags;
 
               $file = fopen("tags.csv", "r");
 
@@ -12,5 +18,7 @@
               }
 
               fclose($file);
-              ?>
-            </div>
+            ?>
+        </div>
+    </body>
+</html>
