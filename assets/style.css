@@ -121,6 +121,7 @@
 	margin: 7px 0;
 	border: 2px solid gray;
 	font-size: 15px;
+	border-radius: 15px;
 }
 
 .SearchBar{
