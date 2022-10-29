@@ -124,6 +124,16 @@
 	border-radius: 15px;
 }
 
+.btn:hover{
+	padding: 8px 20px;
+	margin: 7px 0;
+	border: 2px solid gray;
+	font-size: 15px;
+	border-radius: 15px;
+	color: blue;
+	cursor: pointer;
+}
+
 .SearchBar{
 	/*background-color: blue;*/
 	width: 100%;
