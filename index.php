@@ -37,7 +37,7 @@
               </div>
 
               <div class="SearchBar">
-                <form action="index.php" method="post">
+                <form action="index.php" method="get">
                   <input type="text" placeholder="Enter the tag.." name="search" id="search">
                   <input type="submit" class="btn btn-sm" value="Search">
                 </form>
@@ -45,7 +45,7 @@
 
             <div class="List">
               <?php
-              echo $_POST["search"];
+              echo $_GET["search"];
 
               $file = fopen("tags.csv", "r");
 
