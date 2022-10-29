@@ -7,9 +7,8 @@
         <div class="List">
             <ul>
             <?php
-            if($tags) {
               $tags = explode(" ", $_GET["search"]);
-
+              if($tags) {
               $file = fopen("tags.csv", "r");
 
               while (($data = fgetcsv($file)) !== false) {
