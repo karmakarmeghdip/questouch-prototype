@@ -2,7 +2,7 @@
 <head>
     <title>Tags List</title>
 </head>
-<body><ul>
+<body class="background"><ul class="List">
 <?php
 $file = fopen("tags.csv", "r");
 $tags=array("CU", "Physics");

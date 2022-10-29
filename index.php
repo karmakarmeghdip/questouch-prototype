@@ -43,6 +43,7 @@
                 </form>
             </div>
 
+            <button class="btn"><a href="taglist.php"><b>Show available tags</b></a></button>
 
             <div class="poster">
               <img src="assets/poster.jpg" alt="poster">
