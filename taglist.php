@@ -1,3 +1,8 @@
+<html>
+<head>
+    <title>Tags List</title>
+</head>
+<body><ul>
 <?php
 $file = fopen("tags.csv", "r");
 $tags=array("CU", "Physics");
@@ -6,6 +11,8 @@ while (($data = fgetcsv($file)) !== false) {
 }
 $tags=array_unique($tags);
 foreach ($tags as $tag ) {
-    echo $tag."<br>";
+    echo "<li>".$tag."</li>";
 }
 ?>
+</ul></body>
+</html>

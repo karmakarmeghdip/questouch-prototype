@@ -4,6 +4,7 @@
     </head>
     <body>
         <div class="List">
+            <ul>
             <?php
               $tags = explode(" ", $_GET["search"]);
 
@@ -23,15 +24,17 @@
                     }
                 }
                 if ($conforms) {
+                    echo "<li>";
                     foreach ($data as $i) {
                         echo htmlspecialchars($i)." ";
                     }
-                    echo " <button>Download</button><br>";
+                    echo " <button>Download</button></li>";
                 }
               }
 
               fclose($file);
             ?>
+            </ul>
         </div>
     </body>
 </html>
