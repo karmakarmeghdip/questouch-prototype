@@ -3,7 +3,7 @@
         <title>Result</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
     </head>
-    <body class="background">
+    <body class="background centerer">
     <nav class="navbar background">
             <ul class="nav-list">
               <div class="logo">
