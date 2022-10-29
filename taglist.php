@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Tags List</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body class="background"><ul class="List">
 <?php
