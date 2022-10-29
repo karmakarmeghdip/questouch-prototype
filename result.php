@@ -12,7 +12,7 @@
               while (($data = fgetcsv($file)) !== false) {
                 $conforms=TRUE;
                 foreach ($tags as $tag) {
-                    if (!in_array($tag, $data)) {
+                    if (!in_array($tag, $data, TRUE)) {
                         $conforms=FALSE;
                     }
                 }
