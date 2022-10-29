@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	width: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo img{
+	width: 70%;
+	border: 2px solid blue;
+	border-radius: 70px;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	cursor: pointer;
+}
+
+.nav-list{
+	width: 50%;
+	/*background-color: black;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-list li{
+	list-style: none;
+	padding: 26px 30px;
+}
+
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-list li a:hover{
+	text-decoration: none;
+	color: blue;
+}
+
+/*.rightNav{
+	background-color: blue;
+	width: 50%;
+	text-align: right;
+}*/
+
+#search{
+	padding: 5px;
+	font-size: 17px;
+	border: 2px solid gray;
+	border-radius: 9px;
+}
+
+.background{
+	background: rgba(0, 0, 0, 0.7) url('assets/background.jpg');
+	background-size: cover;
+	background-blend-mode: darken;
+}
+
+.firstSection{
+	height: 200vh;
+}
+
+.box-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: system-ui;
+	max-width: 50%;
+	margin: auto;
+	height: 80%;
+}
+
+.firstHalf{
+	width: 70%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.secondHalf{
+	width: 30%;
+}
+
+.background img{
+	width: 90%;
+	border: 2px solid blue;
+}
+
+.secondHalf img{
+	width: 100%;
+	padding: 4px 0;
+	border: 4px solid blue;
+	display: block;
+	margin: auto;
+}
+
+.text-big{
+	font-size: 30px;
+}
+
+.text-small{
+	font-size: 15px;
+}
+
+.btn{
+	padding: 8px 20px;
+	margin: 7px 0;
+	border: 2px solid gray;
+	font-size: 15px;
+}
+
+.SearchBar{
+	/*background-color: blue;*/
+	width: 100%;
+	max-width: 700px;
+	background: rgba(255, 255, 255, 0.2);
+	display: flex;
+	text-align: center;
+	align-items: center;
+	font-size: 50px;
+	padding: 10px 20px;
+	margin: 7px 0;
+	/*border: 2px solid gray;*/
+	backdrop-filter: blur(4px) saturate(180%);
+}
+
+.SearchBar input{
+	background: transparent;
+	flex: 1;
+	border: 0;
+	outline: none;
+	padding: 24px 20px;
+	font-size: 20px;
+	color: #cac7ff;
+}
+
+::placeholder{
+	color: #cac7ff;
+}
+
+.SearchBar button img{
+	width: 25px;
+}
+
+.SearchBar button{
+	border: 0;
+	border-radius: 80%;
+	width: 80px;
+	height: 80px;
+	background:#58629b ;
+	cursor: pointer;
+}
+
+.poster img{
+	width: 100%;
+	max-width: 700px;
+	background: rgba(255, 255, 255, 0.2);
+	display: flex;
+	text-align: center;
+	align-items: center;
+	background: transparent;
+}
