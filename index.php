@@ -39,7 +39,7 @@
               <div class="SearchBar">
                 <form action="index.php" method="post">
                   <input type="text" placeholder="Enter the tag.." name="search" id="search">
-                  <input type="submit" class="btn btn-sm">Search</button>
+                  <input type="submit" class="btn btn-sm" value="Search">
                 </form>
             </div>
 
