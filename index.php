@@ -27,7 +27,7 @@
           <div class="box-main">
               <div class="firstHalf">
                   <p class="text-big">Question on your one touch.....</p>
-                  <p class="text-small">This is a preliminary step to provied previous years questions to KGEC students. But for now it is just in a trail phase . </p>
+                  <p class="text-small">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
                     <div class="button">
                         <button class="btn"><a href="https://www.kgec.edu.in/">Learn More</a></button>
                     </div>
