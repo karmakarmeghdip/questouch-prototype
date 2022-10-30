@@ -56,20 +56,7 @@
                   <input type="submit" id="btn1" value="Search">
                 </form>
               </div>
-              <select name="tags" id="tag-select" form="tag-query" multiple required>
-              <?php
-                    $file = fopen("tags.csv", "r");
-                    $tags=array("CU", "Physics");
-                    while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_merge(array_splice($data, 1), $tags);
-                    }
-                    $tags=array_unique($tags);
-                    foreach ($tags as $tag ) {
-                        echo "<option>".$tag."</option>";
-                    }
-                    ?>
-              </select>
-              <!--<button class="btn"><a href="taglist.php"><b>Show available tags</b></a></button>-->
+              <button class="btn"><a href="taglist.php"><b>Show available tags</b></a></button>
 
             <div class="poster">
               <img src="assets/poster.jpg" alt="poster">
