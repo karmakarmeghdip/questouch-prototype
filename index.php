@@ -40,7 +40,7 @@
               <div class="SearchBar">
                 <form action="result.php" method="get">
                   <input type="text" placeholder="Enter the tag.." name="search" id="search" list="tags" required="required">
-                  <datalist id="browsers">
+                  <datalist id="tags">
                   <?php
                     $file = fopen("tags.csv", "r");
                     $tags=array("CU", "Physics");
