@@ -39,7 +39,20 @@
 
               <div class="SearchBar">
                 <form action="result.php" method="get">
-                  <input type="text" placeholder="Enter the tag.." name="search" id="search">
+                  <input type="text" placeholder="Enter the tag.." name="search" id="search" list="tags" required="required">
+                  <datalist id="browsers">
+                  <?php
+                    $file = fopen("tags.csv", "r");
+                    $tags=array("CU", "Physics");
+                    while (($data = fgetcsv($file)) !== false) {
+                        $tags=array_merge(array_splice($data, 1), $tags);
+                    }
+                    $tags=array_unique($tags);
+                    foreach ($tags as $tag ) {
+                        echo "<option value='".$tag."'>";
+                    }
+                    ?>
+                  </datalist>
                   <input type="submit" id="btn1" value="Search">
                 </form>
               </div>
