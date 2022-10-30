@@ -38,8 +38,8 @@
               </div>
 
               <div class="SearchBar">
-                <form action="result.php" method="get">
-                  <input type="text" placeholder="Enter the tag.." name="search" id="search" list="tags" required="required">
+                <form action="result.php" method="get" id="tag-query">
+                  <input type="text" placeholder="Enter the tag.." name="search" id="search" list="tags" required>
                   <datalist id="tags">
                   <?php
                     $file = fopen("tags.csv", "r");
@@ -56,8 +56,20 @@
                   <input type="submit" id="btn1" value="Search">
                 </form>
               </div>
-
-              <button class="btn"><a href="taglist.php"><b>Show available tags</b></a></button>
+              <select name="tags" id="tag-select" form="tag-query" multiple required>
+              <?php
+                    $file = fopen("tags.csv", "r");
+                    $tags=array("CU", "Physics");
+                    while (($data = fgetcsv($file)) !== false) {
+                        $tags=array_merge(array_splice($data, 1), $tags);
+                    }
+                    $tags=array_unique($tags);
+                    foreach ($tags as $tag ) {
+                        echo "<option>".$tag."</option>";
+                    }
+                    ?>
+              </select>
+              <!--<button class="btn"><a href="taglist.php"><b>Show available tags</b></a></button>-->
 
             <div class="poster">
               <img src="assets/poster.jpg" alt="poster">
