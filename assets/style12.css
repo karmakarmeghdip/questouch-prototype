@@ -36,6 +36,7 @@
 
 .firstSection{
 	height: 200vh;
+	height: 50%;
 	display: inline-flex;
 	justify-content: center;
 }
