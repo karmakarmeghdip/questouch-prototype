@@ -33,3 +33,9 @@
 	align-items: center;
 	font-family: cursive;
 }
+
+.firstSection{
+	height: 200vh;
+	display: inline-flex;
+	justify-content: center;
+}
