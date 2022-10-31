@@ -59,7 +59,7 @@
                 </form>
               </div>-->
               <form action="result.php" method="get" id="Tags">
-              <select class="custom-select" multiple form="Tags">
+              <select name="tag" class="custom-select" multiple form="Tags">
   <option selected>Open this select menu</option>
   <?php
                     $file = fopen("tags.csv", "r");
