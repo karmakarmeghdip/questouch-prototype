@@ -58,7 +58,7 @@
                   <input type="submit" id="btn1" value="Search">
                 </form>
               </div>-->
-              <form action="result.php" method="get" id="Tags">
+              <form action="result-bs.php" method="get" id="Tags">
               <select name="tag" class="custom-select" multiple form="Tags">
   <option selected>Open this select menu</option>
   <?php
