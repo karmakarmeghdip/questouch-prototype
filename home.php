@@ -10,7 +10,7 @@
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <a class="navbar-brand" href="#"><img src="assets/logo.jpg"></a>
+            <a class="navbar-brand" href="#">QT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,7 +26,7 @@
 
         <main>
         <div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <img class="d-block mx-auto mb-4" src="assets/logo.jpg" alt="" width="72" height="57">
     <h1 class="display-5 fw-bold">Question on your one touch.....</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
