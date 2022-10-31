@@ -69,7 +69,7 @@
                     }
                     $tags=array_unique($tags);
                     foreach ($tags as $tag ) {
-                        echo "<option>".$tag."</option>";
+                        echo "<option value='".$tag."'>".$tag."</option>";
                     }
                     ?>
                     </select>
