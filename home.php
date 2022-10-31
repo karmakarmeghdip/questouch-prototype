@@ -32,13 +32,14 @@
       <p class="lead mb-4">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <button type="button" class="btn btn-primary btn-lg px-4 gap-3"><a href="https://www.kgec.edu.in/">Learn More</a></button>
+        <!-- Not working -->
       </div>
     </div>
-    <div class="secondHalf">
+    <!--<div class="secondHalf">
                   <img src="assets/kgec.jpg" alt="kgec image">
-              </div>
+              </div>-->
 
-              <div class="SearchBar">
+              <!--<div class="SearchBar">
                 <form action="result.php" method="get" id="tag-query">
                   <input type="text" placeholder="Enter the tag.." name="search" id="search" list="tags" required>
                   <datalist id="tags">
@@ -56,8 +57,23 @@
                   </datalist>
                   <input type="submit" id="btn1" value="Search">
                 </form>
-              </div>
-              <button class="btn"><a href="taglist.php"><b>Show available tags</b></a></button>
+              </div>-->
+              <form action="result.php" method="get">
+              <select class="custom-select" multiple>
+  <option selected>Open this select menu</option>
+  <?php
+                    $file = fopen("tags.csv", "r");
+                    $tags=array("CU", "Physics");
+                    while (($data = fgetcsv($file)) !== false) {
+                        $tags=array_merge(array_splice($data, 1), $tags);
+                    }
+                    $tags=array_unique($tags);
+                    foreach ($tags as $tag ) {
+                        echo "<option>".$tag."</option>";
+                    }
+                    ?>
+                    </select>
+                    </form>
 
             <div class="poster">
               <img src="assets/poster.jpg" alt="poster">
