@@ -21,25 +21,20 @@
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="http://wa.me/919475218087">Contact DTL</a></li>
             </ul>
-
-           <!-- <div class="rightNav">
-                <input type="text" name="search" id="search">
-                <button class="btn btn-sm">Search</button>
-            </div> -->
-            </div>
+          </div>
         </nav>
 
-        <section class="background firstSection">
-          <div class="box-main">
-              <div class="firstHalf">
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                  <p class="text-big">Question on your one touch.....</p>
-                  <p class="text-small">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
-                    <div class="button">
-                        <button class="btn"><a href="https://www.kgec.edu.in/">Learn More</a></button>
-                    </div>
-
-              <div class="secondHalf">
+        <main>
+        <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold">Question on your one touch.....</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3"><a href="https://www.kgec.edu.in/">Learn More</a></button>
+      </div>
+    </div>
+    <div class="secondHalf">
                   <img src="assets/kgec.jpg" alt="kgec image">
               </div>
 
@@ -68,7 +63,7 @@
               <img src="assets/poster.jpg" alt="poster">
             </div>
           </div>
-        </section>
+        </main>
 
 </body>
 </html>
