@@ -58,8 +58,8 @@
                   <input type="submit" id="btn1" value="Search">
                 </form>
               </div>-->
-              <form action="result-bs.php" method="get" id="Tags">
-              <select name="tag" class="custom-select" multiple form="Tags">
+              <form action="result_bs.php" method="get" id="Tags">
+              <select name="tag" class="custom-select" multiple form="Tags" required>
   <option selected>Open this select menu</option>
   <?php
                     $file = fopen("tags.csv", "r");
