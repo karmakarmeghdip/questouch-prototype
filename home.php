@@ -73,6 +73,7 @@
                     }
                     ?>
                     </select>
+                    <input type="submit" value="Search">
                     </form>
 
             <div class="poster">
