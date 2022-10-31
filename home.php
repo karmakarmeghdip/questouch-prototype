@@ -85,7 +85,7 @@
     <h1 class="display-4 fw-bold">Centered screenshot</h1>
       
  
-    <div class="overflow-hidden" style="max-height: 30vh;">
+    <div class="overflow-hidden">
       <div class="container px-5">
         <img src="assets/poster.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="1280" loading="lazy">
       </div>
