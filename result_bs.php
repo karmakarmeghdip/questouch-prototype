@@ -40,6 +40,7 @@
             if ($_GET["subject_name"]!=="Any") {
                 array_push($tags, $_GET["subject_name"]);
             }
+            if (count($tags) !== 0) {
               $file = fopen("tags.csv", "r");
 
               while (($data = fgetcsv($file)) !== false) {
@@ -65,6 +66,7 @@
               }
 
               fclose($file);
+            }
             ?>
             </table>
         </div>
