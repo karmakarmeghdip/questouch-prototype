@@ -75,7 +75,6 @@
                     }
                     echo "<td><button class='btn'><b><a href='https://drive.google.com/file/d/1_LVkswM_uNVqvDaX2j06vtiwnUgO24Oh/view?usp=drivesdk'>Download</a></b></button></td></tr>";
                 }
-              }
               fclose($file);
             }
             ?>
