@@ -42,9 +42,9 @@
   <option selected>Any</option>
   <?php
                     $file = fopen("tags.csv", "r");
-                    $tags=array("CU");
+                    $tags=array();
                     while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_merge($data[1], $tags);
+                        $tags=array_push($tags, $data[1]);
                     }
                     $tags=array_unique($tags);
                     foreach ($tags as $tag ) {
@@ -59,9 +59,9 @@
   <option selected>Any</option>
   <?php
                     $file = fopen("tags.csv", "r");
-                    $tags=array("Sem_1");
+                    $tags=array();
                     while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_merge($data[2], $tags);
+                        $tags=array_push($tags, $data[2]);
                     }
                     $tags=array_unique($tags);
                     foreach ($tags as $tag ) {
@@ -76,9 +76,9 @@
   <option selected>Any</option>
   <?php
                     $file = fopen("tags.csv", "r");
-                    $tags=array("Physics");
+                    $tags=array();
                     while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_merge($data[3], $tags);
+                        $tags=array_push($tags, $data[3]);
                     }
                     $tags=array_unique($tags);
                     foreach ($tags as $tag ) {
