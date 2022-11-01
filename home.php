@@ -44,7 +44,7 @@
                     $file = fopen("tags.csv", "r");
                     $tags=array("KGEC");
                     while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_push($tags, $data[1]);
+                        array_push($tags, $data[1]);
                     }
                     $tags=array_unique($tags);
                     foreach ($tags as $tag ) {
@@ -61,7 +61,7 @@
                     $file = fopen("tags.csv", "r");
                     $tags=array("Sem_1");
                     while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_push($tags, $data[2]);
+                        array_push($tags, $data[2]);
                     }
                     $tags=array_unique($tags);
                     foreach ($tags as $tag ) {
@@ -78,7 +78,7 @@
                     $file = fopen("tags.csv", "r");
                     $tags=array("Physics");
                     while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_push($tags, $data[3]);
+                        array_push($tags, $data[3]);
                     }
                     $tags=array_unique($tags);
                     foreach ($tags as $tag ) {
