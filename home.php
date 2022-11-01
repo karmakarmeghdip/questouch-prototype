@@ -31,41 +31,20 @@
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3"><a href="https://www.kgec.edu.in/">Learn More</a></button>
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3" style="color: white;"><a href="https://www.kgec.edu.in/">Learn More</a></button>
         <!-- Not working -->
       </div>
     </div>
-    <!--<div class="secondHalf">
-                  <img src="assets/kgec.jpg" alt="kgec image">
-              </div>-->
-
-              <!--<div class="SearchBar">
-                <form action="result.php" method="get" id="tag-query">
-                  <input type="text" placeholder="Enter the tag.." name="search" id="search" list="tags" required>
-                  <datalist id="tags">
-                  <?php
-                    $file = fopen("tags.csv", "r");
-                    $tags=array("CU", "Physics");
-                    while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_merge(array_splice($data, 1), $tags);
-                    }
-                    $tags=array_unique($tags);
-                    foreach ($tags as $tag ) {
-                        echo "<option value='".$tag."'>";
-                    }
-                    ?>
-                  </datalist>
-                  <input type="submit" id="btn1" value="Search">
-                </form>
-              </div>-->
               <form action="result_bs.php" method="get" id="Tags">
-              <select name="tag" class="custom-select" multiple form="Tags" required>
-  <option selected>Open this select menu</option>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Choose College</label>
+              <select name="college_name" class="form-select" form="Tags" required>
+  <option selected>Any</option>
   <?php
                     $file = fopen("tags.csv", "r");
-                    $tags=array("CU", "Physics");
+                    $tags=array("CU");
                     while (($data = fgetcsv($file)) !== false) {
-                        $tags=array_merge(array_splice($data, 1), $tags);
+                        $tags=array_merge($data[1], $tags);
                     }
                     $tags=array_unique($tags);
                     foreach ($tags as $tag ) {
@@ -73,14 +52,43 @@
                     }
                     ?>
                     </select>
-                    <input type="submit" value="Search">
+                    </div>
+                    <div class="form-group">
+                <label for="exampleFormControlInput1">Choose Semester</label>
+              <select name="semester_name" class="form-select" form="Tags" required>
+  <option selected>Any</option>
+  <?php
+                    $file = fopen("tags.csv", "r");
+                    $tags=array("Sem_1");
+                    while (($data = fgetcsv($file)) !== false) {
+                        $tags=array_merge($data[2], $tags);
+                    }
+                    $tags=array_unique($tags);
+                    foreach ($tags as $tag ) {
+                        echo "<option value='".$tag."'>".$tag."</option>";
+                    }
+                    ?>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                <label for="exampleFormControlInput1">Choose Subject</label>
+              <select name="subject_name" class="form-select" form="Tags" required>
+  <option selected>Any</option>
+  <?php
+                    $file = fopen("tags.csv", "r");
+                    $tags=array("Physics");
+                    while (($data = fgetcsv($file)) !== false) {
+                        $tags=array_merge($data[3], $tags);
+                    }
+                    $tags=array_unique($tags);
+                    foreach ($tags as $tag ) {
+                        echo "<option value='".$tag."'>".$tag."</option>";
+                    }
+                    ?>
+                    </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
                     </form>
-
-            <!--<div class="poster">
-              <img src="assets/poster.jpg" alt="poster">
-            </div>
-                  -->
-
                   <div class="px-4 pt-5 my-5 text-center border-bottom">
     <div class="overflow-hidden">
       <div class="container px-5">
