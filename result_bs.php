@@ -24,11 +24,22 @@
             </ul>
           </div>
         </nav>
-<!--        <div class="List">
-            <ul>
+            <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>File Name</th><th>College Name</th><th>Semester</th><th>Subject</th><th>Download</th>
+                </tr>
             <?php
-              if($_GET["search"]!='') {
-              $tags = explode(" ", $_GET["search"]);
+            $tags=array();
+            if ($_GET["college_name"]!=="Any") {
+                array_push($tags, $_GET["college_name"]);
+            }
+            if ($_GET["semester_name"]!=="Any") {
+                array_push($tags, $_GET["semester_name"]);
+            }
+            if ($_GET["subject_name"]!=="Any") {
+                array_push($tags, $_GET["subject_name"]);
+            }
               $file = fopen("tags.csv", "r");
 
               while (($data = fgetcsv($file)) !== false) {
@@ -45,20 +56,17 @@
                     }
                 }
                 if ($conforms) {
-                    echo "<li>";
+                    echo "<tr>";
                     foreach ($data as $i) {
-                        echo htmlspecialchars($i)." ";
+                        echo "<td>".htmlspecialchars($i)."</td>";
                     }
-                    echo " <button class='btn'><b><a href='https://drive.google.com/file/d/1_LVkswM_uNVqvDaX2j06vtiwnUgO24Oh/view?usp=drivesdk'>Download</a></b></button></li>";
+                    echo "<td><button class='btn'><b><a href='https://drive.google.com/file/d/1_LVkswM_uNVqvDaX2j06vtiwnUgO24Oh/view?usp=drivesdk'>Download</a></b></button></td></tr>";
                 }
               }
 
               fclose($file);
-            }
             ?>
-            </ul>
-        </div> -->
-
-        <?php var_dump($_GET["tag"]); ?>
+            </table>
+        </div>
     </body>
 </html>
