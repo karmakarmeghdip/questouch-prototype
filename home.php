@@ -32,14 +32,13 @@
       <p class="lead mb-4">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <button type="button" class="btn btn-primary btn-lg px-4 gap-3"><a href="https://www.kgec.edu.in/" style="color: white; text-decoration: none;">Learn More</a></button>
-        <!-- Not working -->
       </div>
     </div>
               <form action="result_bs.php" method="get" id="Tags">
                 <div class="form-group">
                 <label for="exampleFormControlInput1">Choose College</label>
               <select name="college_name" class="form-select" form="Tags" required>
-  <option selected>Any</option>
+  <option hidden selected>Select any college</option>
   <?php
                     $file = fopen("tags.csv", "r");
                     $tags=array();
@@ -56,7 +55,7 @@
                     <div class="form-group">
                 <label for="exampleFormControlInput1">Choose Semester</label>
               <select name="semester_name" class="form-select" form="Tags" required>
-  <option selected>Any</option>
+  <option hidden selected>Select any semester</option>
   <?php
                     $file = fopen("tags.csv", "r");
                     $tags=array();
@@ -73,7 +72,7 @@
                     <div class="form-group">
                 <label for="exampleFormControlInput1">Choose Subject</label>
               <select name="subject_name" class="form-select" form="Tags" required>
-  <option selected>Any</option>
+  <option hidden selected>Select any subject</option>
   <?php
                     $file = fopen("tags.csv", "r");
                     $tags=array();
