@@ -42,7 +42,7 @@
   <option selected>Any</option>
   <?php
                     $file = fopen("tags.csv", "r");
-                    $tags=array();
+                    $tags=array("KGEC");
                     while (($data = fgetcsv($file)) !== false) {
                         $tags=array_push($tags, $data[1]);
                     }
@@ -59,7 +59,7 @@
   <option selected>Any</option>
   <?php
                     $file = fopen("tags.csv", "r");
-                    $tags=array();
+                    $tags=array("Sem_1");
                     while (($data = fgetcsv($file)) !== false) {
                         $tags=array_push($tags, $data[2]);
                     }
@@ -76,7 +76,7 @@
   <option selected>Any</option>
   <?php
                     $file = fopen("tags.csv", "r");
-                    $tags=array();
+                    $tags=array("Physics");
                     while (($data = fgetcsv($file)) !== false) {
                         $tags=array_push($tags, $data[3]);
                     }
