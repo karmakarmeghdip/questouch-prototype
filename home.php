@@ -31,11 +31,11 @@
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3"><a href="https://www.kgec.edu.in/" style="color: white; text-decoration: none;">Learn More</a></button>
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mb-3 mb-2"><a href="https://www.kgec.edu.in/" style="color: white; text-decoration: none;">Learn More</a></button>
       </div>
     </div>
-              <form action="result_bs.php" method="get" id="Tags">
-                <div class="form-group">
+              <form action="result_bs.php" method="get" id="Tags" class="text-left">
+                <div class="form-group mb-2" style="max-width: 400px; margin-inline: auto;">
                 <label for="exampleFormControlInput1">Choose College</label>
               <select name="college_name" class="form-select" form="Tags">
   <option hidden selected value="">Select any college</option>
@@ -52,7 +52,7 @@
                     ?>
                     </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-2" style="max-width: 400px; margin-inline: auto;">
                 <label for="exampleFormControlInput1">Choose Semester</label>
               <select name="semester_name" class="form-select" form="Tags">
   <option hidden selected value="">Select any semester</option>
@@ -69,7 +69,7 @@
                     ?>
                     </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-2" style="max-width: 400px; margin-inline: auto;">
                 <label for="exampleFormControlInput1">Choose Subject</label>
               <select name="subject_name" class="form-select" form="Tags">
   <option hidden selected value="">Select any subject</option>
