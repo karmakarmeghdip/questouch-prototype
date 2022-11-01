@@ -31,7 +31,7 @@
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">This is a preliminary step to provide previous years questions to all engineering students. But for now it is just in a trial phase. </p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3"><a href="https://www.kgec.edu.in/" style="color: white;">Learn More</a></button>
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3"><a href="https://www.kgec.edu.in/" style="color: white; text-decoration: none;">Learn More</a></button>
         <!-- Not working -->
       </div>
     </div>
