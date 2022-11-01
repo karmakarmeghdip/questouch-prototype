@@ -31,13 +31,13 @@
                 </tr>
             <?php
             $tags=array();
-            if ($_GET["college_name"]!=="Any") {
+            if ($_GET["college_name"]!=="") {
                 array_push($tags, $_GET["college_name"]);
             }
-            if ($_GET["semester_name"]!=="Any") {
+            if ($_GET["semester_name"]!=="") {
                 array_push($tags, $_GET["semester_name"]);
             }
-            if ($_GET["subject_name"]!=="Any") {
+            if ($_GET["subject_name"]!=="") {
                 array_push($tags, $_GET["subject_name"]);
             }
             if (count($tags) !== 0) {

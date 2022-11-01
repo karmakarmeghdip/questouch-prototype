@@ -38,7 +38,7 @@
                 <div class="form-group">
                 <label for="exampleFormControlInput1">Choose College</label>
               <select name="college_name" class="form-select" form="Tags" required>
-  <option hidden selected>Select any college</option>
+  <option hidden selected value="">Select any college</option>
   <?php
                     $file = fopen("tags.csv", "r");
                     $tags=array();
@@ -55,7 +55,7 @@
                     <div class="form-group">
                 <label for="exampleFormControlInput1">Choose Semester</label>
               <select name="semester_name" class="form-select" form="Tags" required>
-  <option hidden selected>Select any semester</option>
+  <option hidden selected value="">Select any semester</option>
   <?php
                     $file = fopen("tags.csv", "r");
                     $tags=array();
@@ -72,7 +72,7 @@
                     <div class="form-group">
                 <label for="exampleFormControlInput1">Choose Subject</label>
               <select name="subject_name" class="form-select" form="Tags" required>
-  <option hidden selected>Select any subject</option>
+  <option hidden selected value="">Select any subject</option>
   <?php
                     $file = fopen("tags.csv", "r");
                     $tags=array();
