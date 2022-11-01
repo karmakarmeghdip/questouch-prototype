@@ -34,7 +34,7 @@
         <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mb-3 mb-2"><a href="https://www.kgec.edu.in/" style="color: white; text-decoration: none;">Learn More</a></button>
       </div>
     </div>
-              <form action="result_bs.php" method="get" id="Tags" class="text-left">
+              <form action="result_bs.php" method="get" id="Tags" class="text-start">
                 <div class="form-group mb-2" style="max-width: 400px; margin-inline: auto;">
                 <label for="exampleFormControlInput1">Choose College</label>
               <select name="college_name" class="form-select" form="Tags">
